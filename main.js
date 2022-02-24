@@ -31,7 +31,7 @@ try {
     fs.mkdirSync(projectPath);
 } catch (err) {
     if (err.code === "EEXIST") {
-        console.log(`this file ${projectName} mawgoud`);
+        console.log(`this file ${projectName} is already exist`);
     } else {
         console.log(error);
     }
@@ -47,15 +47,14 @@ async function main() {
     process.chdir("./server");
 
     const spinner2 = createSpinner("installing dep ..\n").start();
-    await install("npm install");
+    await install("npm i");
     spinner2.success({ text: "done" });
-    
+
     const spinner3 = createSpinner("install client \n").start();
-    await install("ng -s new client --template samir");
+    await install("ng -s new client");
 
     spinner3.success({ text: "donee" })
     } catch (error) {
     console.log(error);
 }}
-
 main();
