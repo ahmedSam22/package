@@ -1,11 +1,12 @@
 {
   "name": "meancreator",
-  "version": "1.0.7",
+  "version": "1.1.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin" : "./main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahmedSam22/package.git"
