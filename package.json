@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ahmedSam22/package/issues"
   },
-  "homepage": "https://github.com/ahmedSam22/package#readme"
+  "homepage": "https://github.com/ahmedSam22/package#readme",
+  "dependencies": {
+    "nanospinner": "^1.0.0"
+  }
 }
