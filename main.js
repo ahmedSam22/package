@@ -3,7 +3,7 @@
 const { execSync, exec } = require("child_process");
 const path = require("path");
 const fs = require("fs");
-const createSpinner = require("nanospinner");
+const {createSpinner} = require("nanospinner");
 
 
 function install(str) {
@@ -31,7 +31,7 @@ try {
     fs.mkdirSync(projectPath);
 } catch (err) {
     if (err.code === "EEXIST") {
-        console.log(`this file ${projectName} is already exist`);
+        console.log(`this file ${projectName} mawgoud`);
     } else {
         console.log(error);
     }
@@ -44,7 +44,7 @@ async function main() {
     process.chdir(projectName);
     await install(`git clone ${repo}`);
     spinner.success({ text: 'server downloaded' });
-    process.chdir("./server");
+    process.chdir("./angproject/server");
 
     const spinner2 = createSpinner("installing dep ..\n").start();
     await install("npm i");
@@ -57,4 +57,5 @@ async function main() {
     } catch (error) {
     console.log(error);
 }}
+
 main();
