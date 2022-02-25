@@ -50,14 +50,14 @@ async function main() {
     await install("npm i");
     spinner2.success({ text: "done" });
     process.chdir("../client");
-        console.log("test");
     const spinner3 = createSpinner("install client ..\n").start();
-    console.log("tes2");
 
     await install("npm i");
-    console.log("tes3");
 
     spinner3.success({ text: "donee" })
+    process.chdir("../");
+    await install("code .");
+
     } catch (error) {
     console.log(error);
 }}
