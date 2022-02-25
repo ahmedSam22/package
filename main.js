@@ -49,9 +49,13 @@ async function main() {
     const spinner2 = createSpinner("installing dep ..\n").start();
     await install("npm i");
     spinner2.success({ text: "done" });
+    process.chdir("../client");
+        console.log("test");
+    const spinner3 = createSpinner("install client ..\n").start();
+    console.log("tes2");
 
-    const spinner3 = createSpinner("install client \n").start();
-    await install("ng -s new client");
+    await install("npm i");
+    console.log("tes3");
 
     spinner3.success({ text: "donee" })
     } catch (error) {
