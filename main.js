@@ -46,8 +46,8 @@ async function main() {
     spinner.success({ text: 'server downloaded' });
     process.chdir("./angproject/server");
 
-    const spinner2 = createSpinner("installing dep ..\n").start();
-    await install("npm i");
+    // const spinner2 = createSpinner("installing dep ..\n").start();
+    // await install("npm i");
     // spinner2.success({ text: "done" });
     // process.chdir("../client");
     // const spinner3 = createSpinner("install client ..\n").start();
