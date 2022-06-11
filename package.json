@@ -1,6 +1,6 @@
 {
   "name": "ang-starter-pack",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "create Angular project ",
   "main": "main.js",
   "scripts": {
