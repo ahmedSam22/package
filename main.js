@@ -50,7 +50,7 @@ async function main() {
     // await install("npm i");
     // spinner2.success({ text: "done" });
     // process.chdir("../");
-    // const spinner3 = createSpinner("install client ..\n").start();
+    const spinner3 = createSpinner("install client ..\n").start();
 
     // await install("npm i");
 
