@@ -43,9 +43,6 @@ async function main() {
     const spinner = createSpinner("Downloading files ... \n").start();
     process.chdir(projectName);
     await install(`git clone ${repo}`);
-    spinner.success({ text: 'server downloaded' });
-    process.chdir("./angproject/server");
-
     const spinner2 = createSpinner("installing dep ..\n").start();
     await install("npm i");
     spinner2.success({ text: "done" });
