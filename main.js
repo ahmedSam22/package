@@ -60,13 +60,11 @@ async function main() {
 
         process.chdir(`./${projectName}`);
         install(`npm i`).then((_) => {
-            spinner3.success({ text: "Every thing is okay Now  !" });
-          }).then(_=>{
-              spinner.success({ text: "now you can start . Good Luck :)" });
-            
+            spinner3.success({ text: "now you can start . Good Luck :)" });
           });
     
 
+    spinner.success({ text: "now you can start . Good Luck :)" });
   } catch (error) {
     console.log(error);
   }
