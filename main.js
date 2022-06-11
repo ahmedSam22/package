@@ -39,7 +39,7 @@ try {
 }
 async function main() {
   try {
-    const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
+    const spinner = createSpinner("Downloading files ... \n").start();
     // process.chdir(projectName);
     await install(`git clone ${repo}`)
       .then((_) => {
@@ -54,9 +54,7 @@ async function main() {
         });
       })
  
-        const spinner3 = createSpinner(
-          "installing node packages... \n"
-        ).start();
+        const spinner3 = createSpinner("installing node packages..\n").start();
 
         process.chdir(`./${projectName}`);
         install(`npm i`).then((_) => {
