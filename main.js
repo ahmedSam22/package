@@ -40,7 +40,7 @@ try {
 async function main() {
 
     try{
-    const spinner = createSpinner("Downloading files ... \n").start();
+    const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
     process.chdir(projectName);
     await install(`git clone ${repo}`);
     // spinner.success({ text: 'server downloaded' });
