@@ -55,8 +55,7 @@ async function main() {
     }).then(_=>{
         const spinner3 = createSpinner("installing node packages... \n").start();
 
-        path.dirname(projectName);
-         install(`npm i`).then(_=>{
+        path.dirname(projectName).install(`npm i`).then(_=>{
         spinner3.success({ text: "Every thing is okay Now  !" });
 
         })
