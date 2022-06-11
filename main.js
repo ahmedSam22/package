@@ -58,11 +58,10 @@ async function main() {
           "installing node packages... \n"
         ).start();
 
-        path.dirname(projectName).then((_) => {
-          install(`npm i`).then((_) => {
+        path.dirname(projectName);
+        install(`npm i`).then((_) => {
             spinner3.success({ text: "Every thing is okay Now  !" });
           });
-        });
       });
 
     spinner.success({ text: "now you can start . Good Luck :)" });
