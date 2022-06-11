@@ -41,18 +41,20 @@ async function main() {
   try {
     const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
     process.chdir(projectName);
-    await install(`git clone ${repo}`);
-    // process.chdir("./angproject/server");
-
+    await install(`git clone ${repo}`).then(_=>{
+        
     const spinner2 = createSpinner("set Project Name ... \n").start();
 
     fs.rename(currPath, projectName, function (err) {
       if (err) {
-        console.log(err);
+        spinner2.success({ text: "failed" });
       } else {
         spinner2.success({ text: "file downloaded" });
       }
     });
+    });
+    // process.chdir("./angproject/server");
+
 
     spinner.success({ text: "file downloaded" });
   } catch (error) {
