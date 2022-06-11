@@ -58,7 +58,7 @@ async function main() {
           "installing node packages... \n"
         ).start();
 
-        path.dirname(projectName);
+        path.dirname(`./${projectName}`);
         install(`npm i`).then((_) => {
             spinner3.success({ text: "Every thing is okay Now  !" });
           });
