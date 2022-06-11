@@ -48,11 +48,11 @@ async function main() {
 
     const spinner2 = createSpinner("installing dep ..\n").start();
     await install("npm i");
-    spinner2.success({ text: "done" });
-    process.chdir("../client");
-    const spinner3 = createSpinner("install client ..\n").start();
+    // spinner2.success({ text: "done" });
+    // process.chdir("../client");
+    // const spinner3 = createSpinner("install client ..\n").start();
 
-    await install("npm i");
+    // await install("npm i");
 
     spinner3.success({ text: "donee" })
     process.chdir("../");
