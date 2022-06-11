@@ -41,28 +41,26 @@ async function main() {
   try {
     const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
     // process.chdir(projectName);
-    await install(`git clone ${repo}`)
-      .then((_) => {
-        const spinner2 = createSpinner("set Project Name ... \n").start();
+    await install(`git clone ${repo}`).then((_) => {
+      const spinner2 = createSpinner("set Project Name ... \n").start();
 
-        fs.rename(currPath, projectName, function (err) {
-          if (err) {
-            spinner2.success({ text: "failed" });
-          } else {
-            spinner2.success({ text: "file name changed !" });
-          }
-        });
-      })
-      .then((_) => {
+      fs.rename(currPath, projectName, function (err) {
+        if (err) {
+          spinner2.success({ text: "failed" });
+        } else {
+          spinner2.success({ text: "file name changed !" });
+        }
+      }).then((_) => {
         const spinner3 = createSpinner(
           "installing node packages... \n"
         ).start();
 
         path.dirname(`./${projectName}`);
         install(`npm i`).then((_) => {
-            spinner3.success({ text: "Every thing is okay Now  !" });
-          });
+          spinner3.success({ text: "Every thing is okay Now  !" });
+        });
       });
+    });
 
     spinner.success({ text: "now you can start . Good Luck :)" });
   } catch (error) {
