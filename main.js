@@ -40,7 +40,7 @@ try {
 async function main() {
 
     try{
-    const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
+    const spinner = createSpinner("Downloading files ... \n").start();
     process.chdir(projectName);
     await install(`git clone ${repo}`);
     spinner.success({ text: 'server downloaded' });
@@ -49,7 +49,7 @@ async function main() {
     const spinner2 = createSpinner("installing dep ..\n").start();
     await install("npm i");
     spinner2.success({ text: "done" });
-    process.chdir("../");
+    process.chdir("../client");
     const spinner3 = createSpinner("install client ..\n").start();
 
     await install("npm i");
@@ -57,8 +57,7 @@ async function main() {
     spinner3.success({ text: "donee" })
     process.chdir("../");
     await install("code .");
-    console.log("doneeeeeeeeeeeeeee")
-return ;
+
     } catch (error) {
     console.log(error);
 }}
