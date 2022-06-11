@@ -1,6 +1,6 @@
 {
-  "name": "as-mean-pcg",
-  "version": "1.4.5",
+  "name": "ang-starter-pack",
+  "version": "1.4.6",
   "description": "here you can create MEAN project",
   "main": "main.js",
   "scripts": {
