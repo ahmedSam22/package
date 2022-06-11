@@ -40,24 +40,25 @@ try {
 async function main() {
 
     try{
-    const spinner = createSpinner("Downloading files ... \n").start();
-    process.chdir(projectName);
+    const spinner = createSpinner("Downloadingggggggggg files ... \n").start();
+    // process.chdir(projectName);
     await install(`git clone ${repo}`);
-    spinner.success({ text: 'server downloaded' });
-    process.chdir("./angproject/server");
+    // process.chdir("./angproject/server");
+    
+    spinner.success({ text: 'file downloaded' });
+    // const spinner2 = createSpinner("installing dep ..\n").start();
+    // await install("npm i");
+    // spinner2.success({ text: "done" });
+    // process.chdir("../");
+    // const spinner3 = createSpinner("install client ..\n").start();
 
-    const spinner2 = createSpinner("installing dep ..\n").start();
-    await install("npm i");
-    spinner2.success({ text: "done" });
-    process.chdir("../client");
-    const spinner3 = createSpinner("install client ..\n").start();
+    // await install("npm i");
 
-    await install("npm i");
-
-    spinner3.success({ text: "donee" })
-    process.chdir("../");
-    await install("code .");
-
+    // spinner3.success({ text: "donee" })
+    // process.chdir("../");
+    // await install("code .");
+    // console.log("doneeeeeeeeeeeeeee")
+// return ;
     } catch (error) {
     console.log(error);
 }}
