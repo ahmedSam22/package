@@ -56,8 +56,8 @@ async function main() {
 
     spinner3.success({ text: "donee" })
     // process.chdir("../");
-    await install("code .");
-
+    // await install("code .");
+return ;
     } catch (error) {
     console.log(error);
 }}

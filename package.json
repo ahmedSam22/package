@@ -1,6 +1,6 @@
 {
   "name": "as-mean-pcg",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "here you can create MEAN project",
   "main": "main.js",
   "scripts": {
