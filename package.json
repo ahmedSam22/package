@@ -1,7 +1,7 @@
 {
   "name": "ang-starter-pack",
-  "version": "1.4.6",
-  "description": "here you can create MEAN project",
+  "version": "1.4.7",
+  "description": "create Angular project ",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ahmedSam22/package.git"
   },
   "author": "Ahmed samir",
-  "keywords": ["angular","MEAN","node","express","mongo"],
+  "keywords": ["angular","auth","login","signup","material"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahmedSam22/package/issues"

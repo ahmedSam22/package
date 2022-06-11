@@ -49,14 +49,21 @@ async function main() {
       if (err) {
         spinner2.success({ text: "failed" });
       } else {
-        spinner2.success({ text: "file downloaded" });
+        spinner2.success({ text: "file name changed !" });
       }
     });
-    });
-    // process.chdir("./angproject/server");
+    }).then(_=>{
+        const spinner3 = createSpinner("installing node packages... \n").start();
+
+        process.chdir(projectName);
+        await install(`npm i`),then(_=>{
+        spinner3.success({ text: "Every thing is okay Now  !" });
+
+        })
+    })
 
 
-    spinner.success({ text: "file downloaded" });
+    spinner.success({ text: "now you can start . Good Luck :)" });
   } catch (error) {
     console.log(error);
   }
