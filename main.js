@@ -56,7 +56,7 @@ async function main() {
         const spinner3 = createSpinner("installing node packages... \n").start();
 
         process.chdir(projectName);
-        await install(`npm i`).then(_=>{
+         install(`npm i`).then(_=>{
         spinner3.success({ text: "Every thing is okay Now  !" });
 
         })
